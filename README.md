@@ -1,5 +1,43 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img src="banner.png" alt="LedgerAlps Banner" width="100%" />
+
+  # LedgerAlps — Site Officiel
+
+  <p>
+    <strong>Facturation suisse 100% On-Premise, gratuite et open source.</strong><br />
+    Génération native de QR-Factures (SIX SPS v2.3), conformité nLPD et Code des Obligations.
+  </p>
+
+  <p>
+    <a href="https://ledgeralps.ch"><strong>🌐 Visiter le site web (ledgeralps.ch) »</strong></a>
+  </p>
 </div>
 
+---
 
+### 📌 Liens utiles
+
+- 🌐 **Site officiel :** [https://ledgeralps.ch](https://ledgeralps.ch)
+- 💾 **Dépôt du logiciel (app Windows) :** [github.com/kmdn-ch/LedgerAlps](https://github.com/kmdn-ch/LedgerAlps)
+- 📥 **Dernière version (.exe) :** [Télécharger LedgerAlps](https://github.com/kmdn-ch/LedgerAlps/releases/latest)
+
+---
+
+### 🛠️ Développement local
+
+```bash
+# Installation des dépendances
+npm install
+
+# Lancer le serveur de développement (http://localhost:3000)
+npm run dev
+
+# Compiler pour la production
+npm run build
+```
+
+---
+
+<div align="center">
+  <sub>Conçu avec précision pour la Suisse 🇨🇭 — Licence Open Source.</sub>
+</div>
