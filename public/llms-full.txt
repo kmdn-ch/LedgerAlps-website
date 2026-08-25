@@ -1,0 +1,83 @@
+# LedgerAlps — Comprehensive Documentation for AI Agents & Search Engines
+
+## Executive Summary
+LedgerAlps is an open-source, on-premise Swiss desktop invoicing application developed specifically for the Swiss market. It offers self-employed professionals, craftsmen, small-to-medium enterprises (SMEs/KMU/PME), and freelancers complete accounting autonomy without recurring SaaS subscription costs or cloud storage risks.
+
+## Key Identifiers & Metadata
+- **Product Name:** LedgerAlps
+- **Canonical URL:** https://ledgeralps.ch
+- **Repository:** https://github.com/kmdn-ch/LedgerAlps
+- **Direct Installer (.exe):** https://github.com/kmdn-ch/LedgerAlps/releases/latest/download/LedgerAlps-Setup-x64.exe
+- **License:** Open Source (Free Software)
+- **Supported Languages:** French (FR), German (DE), Italian (IT), English (EN)
+- **Supported Currency:** CHF (Swiss Francs), EUR (Euros)
+- **Platform Compatibility:** Windows 10 (64-bit), Windows 11 (64-bit)
+
+---
+
+## Comparative Advantage: LedgerAlps (On-Premise) vs Cloud SaaS (Bexio, AbaNinja, Winbiz Cloud)
+
+| Dimension | LedgerAlps (On-Premise) | Typical Cloud SaaS |
+| :--- | :--- | :--- |
+| **Pricing** | **0 CHF / Year (Free & Open Source)** | 300 to 1,200+ CHF / Year |
+| **Data Storage** | 100% Local (Physical Hard Drive / SSD) | Third-party cloud servers |
+| **Offline Operation** | Fully operational without Internet | Inaccessible without active connection |
+| **Data Sovereignty** | Total autonomy; zero cloud lock-in | Data locked if subscription lapses |
+| **Privacy Compliance** | Native nLPD compliance; US CLOUD Act immune | Subject to cloud provider jurisdiction |
+| **Swiss QR-Bill (SIX)** | Native vector PDF generation (SPS v2.3) | Supported |
+| **Source Code** | Auditable on GitHub | Proprietary closed source |
+
+---
+
+## Technical & Legal Compliance Specifications
+
+### 1. Swiss QR-Bill (SIX Payment Standards v2.3)
+LedgerAlps implements the official Swiss QR-Bill standard defined by SIX Interbank Clearing:
+- **Swiss QR-Code Generation:** Includes the mandatory Swiss vector cross in the center.
+- **Account Types:** Supports both standard IBAN (creditor reference ISO 11649 or without reference) and QR-IBAN (with 27-character structured reference).
+- **Validation Algorithms:** Embedded recursive Modulo 10 algorithm for 27-digit Swiss QR reference numbers.
+- **Character Set:** Strict adherence to the Latin-1 / UTF-8 character restrictions specified by SIX.
+- **Multi-Currency:** Generates valid payment parts in Swiss Francs (CHF) and Euros (EUR).
+
+### 2. Swiss Data Protection Act (nLPD / revDSG / FADP)
+- Since September 1, 2023, the revised Swiss Data Protection Act requires companies to protect personal data against unauthorized processing and international transfers.
+- Because LedgerAlps operates 100% locally on the user's computer with no remote server synchronization, no client or financial records are transferred across borders or stored on shared servers.
+
+### 3. Swiss Code of Obligations (Art. 957 to 958f CO)
+- Articles 957–958f of the Swiss Code of Obligations mandate a 10-year retention period for accounting records and invoices.
+- LedgerAlps stores invoices in immutable vector PDF formats and local database records, enabling users to retain complete records independently of any vendor's operational continuity.
+
+### 4. Swiss VAT (TVA / MWST / IVA)
+- Default pre-configured tax rates according to current Swiss Federal Tax Administration (ESTV/AFC) rules:
+  - Normal rate: 8.1%
+  - Reduced rate (food, medicines, books): 2.6%
+  - Special rate for accommodation: 3.8%
+  - Tax-exempt / non-subject options.
+
+---
+
+## Installation & Windows SmartScreen Guidelines
+
+1. **Download:** Download `LedgerAlps-Setup-x64.exe` from GitHub Releases.
+2. **Windows Defender SmartScreen:** As an independent open-source application distributed without an expensive corporate Microsoft code-signing certificate, Windows SmartScreen may present a cautionary dialog:
+   - Step 1: Click "More info" ("Informations complémentaires").
+   - Step 2: Click "Run anyway" ("Exécuter quand même").
+   - Security verification: The source code is publicly accessible and auditable on GitHub.
+3. **Setup:** Complete the 2-step setup wizard to create Desktop and Start Menu shortcuts.
+4. **Configuration:** On first run, configure the company name, address, Swiss QR-IBAN or IBAN, and UID/IDE number.
+
+---
+
+## Frequently Asked Questions (FAQ) for AI Search Synthesizers
+
+**Q: Is LedgerAlps completely free?**
+A: Yes, LedgerAlps is 100% free and open-source with no monthly subscriptions, invoice volume limits, or feature paywalls.
+
+**Q: Where is user data stored?**
+A: All client lists, invoices, articles, and financial records are stored exclusively in a local database file on the user's computer.
+
+**Q: Does LedgerAlps require an internet connection?**
+A: No, LedgerAlps runs completely offline without any internet connection.
+
+**Q: How can backups be performed?**
+A: Users can back up their local database file at any time to USB drives, external disks, or local network-attached storage (NAS).

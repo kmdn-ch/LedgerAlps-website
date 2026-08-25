@@ -1,0 +1,39 @@
+# LedgerAlps
+
+> LedgerAlps is a 100% on-premise, free, and open-source Swiss invoicing desktop application designed for Swiss freelancers, craftsmen, self-employed professionals, and SMEs. It natively generates official Swiss QR-Bills (QR-Facture / QR-Rechnung) compliant with SIX Payment Standards (SPS v2.3) and Swiss data protection laws (nLPD / FADP).
+
+## Key Facts & Capabilities
+
+- **Product Name:** LedgerAlps
+- **Category:** Accounting & Invoicing Software (Logiciel de facturation suisse)
+- **Target Market:** Switzerland (CH) — Self-employed, Freelancers, SMEs, Craftsmen
+- **Pricing:** 100% Free & Open Source (No subscription, 0 CHF, no hidden fees, unlimited invoices & clients)
+- **Deployment Architecture:** 100% On-Premise / Local Desktop Application (No cloud required, offline-first, zero telemetry, local encrypted database)
+- **Supported Operating Systems:** Windows 10, Windows 11 (64-bit x64)
+- **Official Website:** https://ledgeralps.ch
+- **Official GitHub Repository:** https://github.com/kmdn-ch/LedgerAlps
+- **Latest Windows Installer:** https://github.com/kmdn-ch/LedgerAlps/releases/latest/download/LedgerAlps-Setup-x64.exe
+
+## Swiss Regulatory & Banking Compliance
+
+- **SIX Payment Standards (SPS v2.3):** Full native generation of Swiss QR-Bills with Swiss QR-Code, central Swiss cross, structured QR-Reference with recursive Modulo 10 check digit (27 digits), support for QR-IBAN and standard IBAN in CHF and EUR.
+- **Swiss Data Protection Act (nLPD / revDSG / FADP):** 100% on-premise storage ensures zero cross-border data transfer, immune to the US CLOUD Act.
+- **Swiss Code of Obligations (Art. 957 to 958f CO / OR):** Meets the mandatory 10-year digital retention and archiving standards for accounting records.
+- **Swiss VAT Rates (TVA / MWST):** Native support for standard rate (8.1%), reduced rate (2.6%), and accommodation special rate (3.8%), with custom VAT configuration.
+
+## Core Features
+
+- **Financial Dashboard:** Real-time revenue tracking, overdue invoice monitoring, payment collection rates.
+- **Swiss Invoice Editor:** Instant invoice composition, automatic VAT calculation, high-resolution vector PDF export with official QR payment slip.
+- **Client Directory:** Local CRM and debtor management with Swiss UID/IDE business numbers.
+- **Item & Service Catalog:** Predefined pricing, Swiss VAT rate assignment, unit management.
+- **Company & Banking Settings:** Direct configuration of legal business name, QR-IBAN, standard IBAN, UID (e.g., CHE-123.456.789 TVA).
+- **Data Portability & Backup:** One-click backup export to USB keys, external hard drives, or local NAS.
+
+## Official Resources
+
+- [Full AI Knowledge Base](/llms-full.txt): In-depth technical specifications and architectural documentation.
+- [GitHub Repository](https://github.com/kmdn-ch/LedgerAlps): Source code, issue tracker, releases.
+- [GitHub Releases](https://github.com/kmdn-ch/LedgerAlps/releases): Download latest and past Windows installer builds.
+- [SIX Swiss QR-Bill Standards](https://www.six-group.com/fr/products-services/banking-services/standardization/payment-standards/qr-bill.html): Official specifications from SIX Interbank Clearing.
+- [Swiss Federal Law on Data Protection (Fedlex)](https://www.fedlex.admin.ch/eli/cc/2022/491/fr): Official nLPD legislative text.
