@@ -21,20 +21,6 @@
 - 💾 **Dépôt du logiciel (app Windows) :** [github.com/kmdn-ch/LedgerAlps](https://github.com/kmdn-ch/LedgerAlps)
 - 📥 **Dernière version (.exe) :** [Télécharger LedgerAlps](https://github.com/kmdn-ch/LedgerAlps/releases/latest)
 
----
-
-### 🛠️ Développement local
-
-```bash
-# Installation des dépendances
-npm install
-
-# Lancer le serveur de développement (http://localhost:3000)
-npm run dev
-
-# Compiler pour la production
-npm run build
-```
 
 ---
 
