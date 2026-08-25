@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Github, Sun, Moon, Menu, X } from 'lucide-react';
+import { Github, Sun, Moon, Menu, X } from 'lucide-react';
 import { LINKS } from '../data/siteData';
 import { BrandLogo } from './BrandLogo';
 import { LanguageSelector } from './LanguageSelector';
 import { useLanguage } from '../context/LanguageContext';
-import { useGitHubRelease } from '../hooks/useGitHubRelease';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -15,7 +14,6 @@ export const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useLanguage();
-  const { release } = useGitHubRelease();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -117,19 +115,6 @@ export const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
             {darkMode ? <Sun className="w-4 h-4 text-[#f7931a]" /> : <Moon className="w-4 h-4 text-slate-600" />}
           </button>
 
-          {/* Windows Download CTA with Live GitHub Version */}
-          <a
-            id="header-download-cta"
-            href="#telecharger"
-            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-white bg-[#0B1524] hover:bg-[#f7931a] dark:bg-[#f7931a] dark:hover:bg-[#d87c0e] dark:text-white rounded-md transition-all duration-200 shadow-xs"
-          >
-            <Download className="w-3.5 h-3.5" />
-            <span>{t.nav.downloadBtn}</span>
-            <span className="hidden lg:inline text-[10px] opacity-80 font-mono">
-              {release.version}
-            </span>
-          </a>
-
           {/* Mobile menu hamburger */}
           <button
             id="mobile-menu-toggle"
@@ -203,16 +188,6 @@ export const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
             <Github className="w-4 h-4" />
             <span>{t.nav.githubSourceCode}</span>
           </a>
-          <div className="pt-2">
-            <a
-              href="#telecharger"
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-white bg-[#f7931a] hover:bg-[#d87c0e] rounded-md transition-all shadow-xs"
-            >
-              <Download className="w-4 h-4" />
-              <span>{t.nav.downloadInstaller} ({release.version})</span>
-            </a>
-          </div>
         </div>
       )}
     </header>
