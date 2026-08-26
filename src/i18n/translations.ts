@@ -39,7 +39,7 @@ export const translations = {
     },
     // Hero
     hero: {
-      topBadgeTag: 'Swiss Precision Invoicing',
+      topBadgeTag: 'Facturation',
       topBadgeSub: '100% On-Premise & Open Source',
       title1: 'Simple. Gratuit.',
       title2: 'Souverain.',
@@ -416,7 +416,7 @@ export const translations = {
       downloadInstaller: 'Installer herunterladen',
     },
     hero: {
-      topBadgeTag: 'Swiss Precision Invoicing',
+      topBadgeTag: 'Fakturierung',
       topBadgeSub: '100% On-Premise & Open Source',
       title1: 'Einfach. Kostenlos.',
       title2: 'Souverän.',
@@ -785,7 +785,7 @@ export const translations = {
       downloadInstaller: 'Scarica l\'installer',
     },
     hero: {
-      topBadgeTag: 'Swiss Precision Invoicing',
+      topBadgeTag: 'Fatturazione',
       topBadgeSub: '100% On-Premise & Open Source',
       title1: 'Semplice. Gratuito.',
       title2: 'Sovrano.',
@@ -1154,7 +1154,7 @@ export const translations = {
       downloadInstaller: 'Download Installer',
     },
     hero: {
-      topBadgeTag: 'Swiss Precision Invoicing',
+      topBadgeTag: 'Invoicing',
       topBadgeSub: '100% On-Premise & Open Source',
       title1: 'Simple. Free.',
       title2: 'Sovereign.',
