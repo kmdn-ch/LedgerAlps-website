@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Primary Title & Description -->
-    <title>LedgerAlps — Facturation Suisse Open Source, Gratuite & 100% On-Premise (QR-Facture SIX & nLPD)</title>
-    <meta name="description" content="Logiciel de facturation suisse 100% gratuit, on-premise et open-source pour Windows. Génération de QR-Factures SIX (SPS v2.3), conformité nLPD et Code des Obligations sans abonnement ni cloud." />
-    <meta name="keywords" content="facturation suisse, QR-facture, QR-bill, QR-Rechnung, logiciel facturation gratuit suisse, on-premise, open source, conformité nLPD, SIX Payment Standards, QR-IBAN, PME suisse, indépendant suisse, TVA suisse 8.1%" />
+    <!-- Primary SEO Meta Tags -->
+    <title>LedgerAlps — Facturation Suisse Gratuite, On-Premise & Open Source (QR-Facture SIX, nLPD & CO)</title>
+    <meta name="title" content="LedgerAlps — Facturation Suisse Gratuite, On-Premise & Open Source" />
+    <meta name="description" content="Logiciel de facturation suisse 100% on-premise, gratuit et open-source pour Windows 10/11. Génération de QR-Factures conformes aux normes SIX (SPS v2.3), conformité nLPD et Code des Obligations sans abonnement ni cloud." />
+    <meta name="keywords" content="facturation suisse, QR-facture, QR-bill, QR-Rechnung, QR-Fattura, logiciel facturation gratuit suisse, on-premise, open source, conformité nLPD, revDSG, SIX Payment Standards, SPS v2.3, QR-IBAN, PME suisse, indépendant suisse, carnet du lait, TVA suisse 8.1%" />
     <meta name="author" content="LedgerAlps Team (kmdn-ch)" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="application-name" content="LedgerAlps" />
+    <meta name="apple-mobile-web-app-title" content="LedgerAlps" />
     
-    <!-- Canonical & Multilingual Alternate Links -->
+    <!-- Canonical & Multilingual Alternate Links (hreflang) -->
     <link rel="canonical" href="https://ledgeralps.ch/" />
     <link rel="alternate" hreflang="fr-CH" href="https://ledgeralps.ch/?lang=fr" />
     <link rel="alternate" hreflang="de-CH" href="https://ledgeralps.ch/?lang=de" />
@@ -23,26 +25,34 @@
     <!-- AI Agent & LLM Crawlers Discovery Standards (https://llmstxt.org) -->
     <link rel="alternate" type="text/plain" href="/llms.txt" title="AI Agents / LLMs Knowledge Context" />
     <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full Technical Documentation for AI Agents" />
-    <meta name="ai-content-declaration" content="Facts, specifications, and regulatory references verified for Swiss Law (nLPD, CO) and SIX Interbank Clearing standards." />
+    <meta name="ai-content-declaration" content="Facts, specifications, and regulatory references verified for Swiss Law (nLPD RS 235.1, CO RS 220) and SIX Interbank Clearing standards (SPS v2.3)." />
 
-    <!-- Open Graph / Social Cards -->
+    <!-- Open Graph / Facebook / LinkedIn Cards -->
     <meta property="og:site_name" content="LedgerAlps" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ledgeralps.ch/" />
     <meta property="og:title" content="LedgerAlps — Facturation Suisse Gratuite, On-Premise & Open Source" />
-    <meta property="og:description" content="Solution de facturation suisse 100% on-premise pour Windows. QR-Factures conformes aux normes SIX et à la nLPD, sans aucun abonnement ni stockage cloud." />
+    <meta property="og:description" content="Solution de facturation suisse 100% on-premise pour Windows. QR-Factures SIX SPS v2.3, conformité nLPD et Code des Obligations sans abonnement ni cloud." />
+    <meta property="og:image" content="https://ledgeralps.ch/banner.png" />
+    <meta property="og:image:secure_url" content="https://ledgeralps.ch/banner.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LedgerAlps — Facturation Suisse On-Premise & Open Source" />
     <meta property="og:locale" content="fr_CH" />
     <meta property="og:locale:alternate" content="de_CH" />
     <meta property="og:locale:alternate" content="it_CH" />
     <meta property="og:locale:alternate" content="en_US" />
 
-    <!-- Twitter Cards -->
+    <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ledgeralps.ch/" />
     <meta name="twitter:title" content="LedgerAlps — Facturation Suisse On-Premise & Open Source" />
     <meta name="twitter:description" content="Générez vos QR-Factures suisses gratuitement sans abonnement, 100% hors-ligne et conforme nLPD." />
+    <meta name="twitter:image" content="https://ledgeralps.ch/banner.png" />
 
     <!-- Theme & UI -->
-    <meta name="theme-color" content="#0B1524" />
+    <meta name="theme-color" content="#0B1524" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -57,9 +67,11 @@
           "@id": "https://ledgeralps.ch/#software",
           "name": "LedgerAlps",
           "operatingSystem": "Windows 10, Windows 11 (64-bit)",
-          "applicationCategory": "BusinessApplication",
-          "applicationSubCategory": "Accounting & Invoicing Software",
-          "description": "Logiciel de facturation suisse 100% on-premise, gratuit et open-source pour Windows. Génération de QR-Factures conformes aux spécifications SIX Payment Standards (SPS v2.3) et à la nouvelle loi suisse sur la protection des données (nLPD).",
+          "applicationCategory": "AccountingApplication",
+          "applicationSubCategory": "Invoicing & Billing Software",
+          "description": "Logiciel de facturation suisse 100% on-premise, gratuit et open-source pour Windows. Génération de QR-Factures conformes aux spécifications SIX Payment Standards (SPS v2.3) et à la nouvelle loi suisse sur la protection des données (nLPD RS 235.1).",
+          "image": "https://ledgeralps.ch/banner.png",
+          "screenshot": "https://ledgeralps.ch/banner.png",
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -68,7 +80,7 @@
             "priceValidUntil": "2099-12-31"
           },
           "downloadUrl": "https://github.com/kmdn-ch/LedgerAlps/releases/latest/download/LedgerAlps-Setup-x64.exe",
-          "softwareVersion": "1.0.0",
+          "softwareVersion": "1.5.4",
           "releaseNotes": "https://github.com/kmdn-ch/LedgerAlps/releases",
           "license": "https://opensource.org/licenses/MIT",
           "isAccessibleForFree": true,
@@ -82,7 +94,8 @@
             "Gestion des taux de TVA suisses en vigueur (8.1%, 2.6%, 3.8%)",
             "Export PDF vectoriel haute définition",
             "Tableau de bord financier et gestion des clients/débiteurs",
-            "Sauvegarde et exportation locale sur disque ou NAS"
+            "Sauvegarde et exportation locale sur disque ou NAS",
+            "Comptabilité simplifiée carnet du lait (CO art. 957 al. 2)"
           ],
           "publisher": {
             "@id": "https://ledgeralps.ch/#organization"
@@ -93,8 +106,10 @@
           "@id": "https://ledgeralps.ch/#organization",
           "name": "LedgerAlps",
           "url": "https://ledgeralps.ch",
+          "logo": "https://ledgeralps.ch/banner.png",
           "sameAs": [
             "https://github.com/kmdn-ch/LedgerAlps",
+            "https://github.com/kmdn-ch/LedgerAlps-website",
             "https://www.linkedin.com/company/109814032/",
             "https://facebook.com/ledgeralps"
           ],
@@ -121,6 +136,48 @@
             "@id": "https://ledgeralps.ch/#organization"
           },
           "inLanguage": ["fr-CH", "de-CH", "it-CH", "en"]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://ledgeralps.ch/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://ledgeralps.ch/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Avantages On-Premise",
+              "item": "https://ledgeralps.ch/#avantages"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Interface & Conformité",
+              "item": "https://ledgeralps.ch/#apercu-logiciel"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "QR-Facture SIX",
+              "item": "https://ledgeralps.ch/#qr-facture"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Installation Windows",
+              "item": "https://ledgeralps.ch/#installation"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "FAQ Sécurité",
+              "item": "https://ledgeralps.ch/#faq"
+            }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -207,6 +264,20 @@
   </head>
   <body class="bg-white text-slate-900 dark:bg-[#070D18] dark:text-[#F8FAFC] antialiased font-sans transition-colors duration-200">
     <div id="root"></div>
+    <noscript>
+      <div style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; line-height: 1.6;">
+        <h1>LedgerAlps — Facturation Suisse On-Premise, Gratuite & Open Source</h1>
+        <p>LedgerAlps est un logiciel de facturation pour Windows 10/11 spécialement conçu pour les indépendants, artisans et PME en Suisse. Il permet de générer des <strong>QR-Factures suisses conformes aux normes SIX (SPS v2.3)</strong>, avec QR-IBAN et référence structurée, en respectant la <strong>nLPD</strong> et le <strong>Code des Obligations</strong>.</p>
+        <h2>Caractéristiques principales :</h2>
+        <ul>
+          <li><strong>100% On-Premise & Hors-Ligne :</strong> Vos données restent sur votre ordinateur sans aucun cloud externe.</li>
+          <li><strong>Gratuit & Libre :</strong> 0 CHF / an, sans abonnement, sans limite de factures ni de clients.</li>
+          <li><strong>Normes SIX & QR-Facture :</strong> Génération native en CHF et EUR, référence modulo 10 récursive à 27 chiffres.</li>
+          <li><strong>Conformité nLPD & CO :</strong> Traçabilité des écritures comptables et archivage légal 10 ans (art. 958f CO).</li>
+        </ul>
+        <p><a href="https://github.com/kmdn-ch/LedgerAlps/releases/latest/download/LedgerAlps-Setup-x64.exe">Télécharger LedgerAlps pour Windows (.exe)</a> | <a href="https://github.com/kmdn-ch/LedgerAlps">Code source sur GitHub</a></p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
