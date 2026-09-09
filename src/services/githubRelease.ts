@@ -33,6 +33,21 @@ const FALLBACK_RELEASE: GitHubReleaseInfo = {
 const CACHE_KEY = 'ledgeralps_gh_release_cache';
 const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutes cache
 
+function isSafeGitHubUrl(url: unknown): boolean {
+  if (typeof url !== 'string') return false;
+  try {
+    const parsed = new URL(url);
+    return (
+      parsed.protocol === 'https:' &&
+      (parsed.hostname === 'github.com' ||
+        parsed.hostname === 'objects.githubusercontent.com' ||
+        parsed.hostname.endsWith('.github.com'))
+    );
+  } catch {
+    return false;
+  }
+}
+
 export async function fetchLatestGitHubRelease(): Promise<GitHubReleaseInfo> {
   // Check localStorage cache first
   if (typeof window !== 'undefined') {
@@ -71,13 +86,19 @@ export async function fetchLatestGitHubRelease(): Promise<GitHubReleaseInfo> {
       exeAsset = data.assets.find((a: GitHubAsset) => a.name.toLowerCase().endsWith('.exe'));
     }
 
+    const safeHtmlUrl = isSafeGitHubUrl(data.html_url) ? data.html_url : FALLBACK_RELEASE.htmlUrl;
+    const safeDownloadUrl =
+      exeAsset?.browser_download_url && isSafeGitHubUrl(exeAsset.browser_download_url)
+        ? exeAsset.browser_download_url
+        : safeHtmlUrl;
+
     const releaseInfo: GitHubReleaseInfo = {
       tagName,
       version,
       releaseName: data.name || `LedgerAlps ${version}`,
       publishedAt: data.published_at || new Date().toISOString(),
-      htmlUrl: data.html_url || 'https://github.com/kmdn-ch/LedgerAlps/releases/latest',
-      downloadUrl: exeAsset?.browser_download_url || data.html_url || 'https://github.com/kmdn-ch/LedgerAlps/releases/latest',
+      htmlUrl: safeHtmlUrl,
+      downloadUrl: safeDownloadUrl,
       exeAssetName: exeAsset?.name || 'LedgerAlps-Setup-x64.exe',
       exeAssetSize: exeAsset?.size,
       body: data.body,

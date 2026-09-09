@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Primary SEO Meta Tags -->
+    <!-- Primary SEO & Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self';" />
+
     <title>LedgerAlps — Facturation Suisse Gratuite, On-Premise & Open Source (QR-Facture SIX, nLPD & CO)</title>
     <meta name="title" content="LedgerAlps — Facturation Suisse Gratuite, On-Premise & Open Source" />
     <meta name="description" content="Logiciel de facturation suisse 100% on-premise, gratuit et open-source pour Windows 10/11. Génération de QR-Factures conformes aux normes SIX (SPS v2.3), conformité nLPD et Code des Obligations sans abonnement ni cloud." />
